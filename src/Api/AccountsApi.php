@@ -1370,12 +1370,12 @@ class AccountsApi
      *
      * @param ?string $account_id The external account number (int) or account ID GUID.
      * @param ?string $clickwrap_id The ID of the clickwrap.
-     * @param  \DocuSign\Click\Api\AccountsApi\Options\GetClickwrapAgreementsOptions $options for modifying the behavior of the function. (optional)
+     * @param  \DocuSign\Click\Api\AccountsApi\GetClickwrapAgreementsOptions $options for modifying the behavior of the function. (optional)
      *
      * @throws ApiException on non-2xx response
      * @return \DocuSign\Click\Model\ClickwrapAgreementsResponse
      */
-    public function getClickwrapAgreements($account_id, $clickwrap_id, \DocuSign\Click\Api\AccountsApi\Options\GetClickwrapAgreementsOptions $options = null)
+    public function getClickwrapAgreements($account_id, $clickwrap_id, \DocuSign\Click\Api\AccountsApi\GetClickwrapAgreementsOptions $options = null)
     {
         list($response) = $this->getClickwrapAgreementsWithHttpInfo($account_id, $clickwrap_id, $options);
         return $response;
@@ -1388,12 +1388,12 @@ class AccountsApi
      *
      * @param ?string $account_id The external account number (int) or account ID GUID.
      * @param ?string $clickwrap_id The ID of the clickwrap.
-     * @param  \DocuSign\Click\Api\AccountsApi\Options\GetClickwrapAgreementsOptions $options for modifying the behavior of the function. (optional)
+     * @param  \DocuSign\Click\Api\AccountsApi\GetClickwrapAgreementsOptions $options for modifying the behavior of the function. (optional)
      *
      * @throws ApiException on non-2xx response
      * @return array of \DocuSign\Click\Model\ClickwrapAgreementsResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getClickwrapAgreementsWithHttpInfo($account_id, $clickwrap_id, \DocuSign\Click\Api\AccountsApi\Options\GetClickwrapAgreementsOptions $options = null): array
+    public function getClickwrapAgreementsWithHttpInfo($account_id, $clickwrap_id, \DocuSign\Click\Api\AccountsApi\GetClickwrapAgreementsOptions $options = null): array
     {
         // verify the required parameter 'account_id' is set
         if ($account_id === null) {
